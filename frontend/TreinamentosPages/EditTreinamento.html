@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/edit_treinamento.css">
+    <title>Update Treinamento</title>
+</head>
+<body>
+    <div>
+        <h2>Treinamentos já criados possíveis de dar UPDATE</h2>
+        <button id="Viewtreinamentos">Ver</button><br><br>
+    </div>
+
+    <div class="ViewTreinamentosAdm"></div>
+
+    <div>
+        <h2>Ver Quizzes disponíveis para Update</h2>
+        <button id="VerAllQuiz">Ver</button><br>
+    </div>
+
+    <div class="ViewQuizAdm"></div>
+
+    <div>
+        <label for="OldTreinamentoTitle">Título do treinamento desejado: </label>
+        <input type="text" id="OldTreinamentoTitle"/><br><br>
+        <label for="OldTreinamentoCodigo">Código do treinamento desejado: </label>
+        <input type="number" id="OldTreinamentoCodigo"/><br><br>
+        <button id="button_edit_treinamento">Clique aqui para começar a editar</button>
+    </div>
+    
+    <div id="update">
+        <h1>ATUALIZANDO TREINAMENTO...</h1>
+    <div>
+        <label for="new_nome_comercial">Novo nome comercial</label>
+        <input type="text" id="new_nome_comercial"><br>
+        <label for="new_descricao">Nova descrição</label>
+        <input type="text" id="new_descricao"><br>
+        <label for="new_carga_horaria">Nova carga horária (em horas)</label>
+        <input type="number" id="new_carga_horaria"><br>
+        <label for="new_inicio_inscricoes">Novo início das inscrições</label>
+        <input type="date" id="new_inicio_inscricoes"><br>
+        <label for="new_fim_inscricoes">Novo fim das inscrições</label>
+        <input type="date" id="new_fim_inscricoes"><br>
+        <label for="new_inicio_treinamento">Novo início do treinamento</label>
+        <input type="date" id="new_inicio_treinamento"><br>
+        <label for="new_fim_treinamento">Novo fim do treinamento</label>
+        <input type="date" id="new_fim_treinamento"><br>
+        <label for="new_min_inscritos">Novo mínimo de inscritos</label>
+        <input type="number" id="new_min_inscritos"><br>
+        <label for="new_max_inscritos">Novo máximo de inscritos</label>
+        <input type="number" id="new_max_inscritos"><br>
+
+        <label for="QuizAptidao"> Novo nome do Quiz de Aptidão</label>
+        <input type="text" id="QuizAptidao"><br>
+        <label for="Case1">Nobo nome do Quiz para Case 1</label>
+        <input type="text" id="Case1"><br>
+        <label for="Case2">Novo nome do Quiz para Case 2</label>
+        <input type="text" id="Case2"><br>
+
+        <label for="Curso1text">Novo texto de apresentação curso 1</label>
+        <input type="text" id="Curso1text"><br>
+        <label for="Curso2text">Novo texto de apresentação curso 2</label>
+        <input type="text" id="Curso2text"><br>
+    </div>
+    <div class="button_editar_treino">
+        <button id="edit_button_treino">Concluir Edição</button>
+    </div>  
+
+</body>
+<script src="../src/CrudTreinamentosJs/EditTreino.js"></script>
+</html>
